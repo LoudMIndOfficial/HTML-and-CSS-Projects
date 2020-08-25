@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+            .nav{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                }
+
+        
+
+            li a {
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                font-family: monospace;
+                }
+                
+                li{
+                display: inline;
+            }
+        
+    
+            
+            .title{
+                background-color;
+                color: black;
+                font-size: 100px;
+                font-weight: 400;
+                text-align: center;
+                font-family: monospace;
+            }
+            body{
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .gallery {
+            margin: 10px 50px;
+            }
+
+            .gallery img:hover {
+           filter: grayscale(100%);
+            }
+            .gallery img {
+            transition: .5s;
+            padding: 15px;
+            width: 465px;
+              } 
+
+            input[type=text], select,textarea{
+                width: 100%;
+                padding: 12px;
+                border: 1 px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+
+            input[type=submit] {
+                background-color: #4caf50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+            .container {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 25px;
+                width: 450px;
+                text-align: center;
+                box-shadow: 10px 10px #1111112c;
+                margin:auto;    
+            }
+            .morepadding {
+                padding: 70px;
+            }
+            .video {
+                padding:100px;
+            }
+
+            .footer{
+                padding: 70px;
+            }
+
+    
+        </style>
+
+    <title>Jeep's Unlimited</title>
+</head>
+    <body>
+        <!-- nav start -->
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#video">VIDEO</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- nav end -->
+        
+        <!-- header -->
+        <h1 class="title">JEEPS UNLIMITED</h1>
+        <!-- header end -->
+         
+        <!-- Cover image    -->
+            <div>
+                <img src="./images/Coverimage1.png" alt="">
+            </div>
+        <!-- cover image end -->
+        
+        <!-- photo gallery -->
+        
+        <h1 class="title">Photo Gallery</h1>
+        
+        <div class="gallery">
+            
+            <div id="gallery">
+        
+                <a href="images/Jeep_1.jpg"><img src="images/Jeep_1.jpg" alt="Jeep 1"></a>
+                
+                <a href="images/Jeep_2.jpg"><img src="images/Jeep_2.jpg" alt="Jeep 2" > </a>
+
+                <a href="images/Jeep_3.jpg"><img src="images/Jeep_3.jpg" alt="Jeep 3"></a>
+      
+                <a href="images/Jeep_4.jpg"><img src="images/Jeep_4.jpg" alt="Jeep 4" ></a>
+           
+                <a href="images/Jeep_5.jpg"><img src="images/Jeep_5.jpg" alt="Jeep 5"></a>
+            
+                <a href="images/Jeep_6.jpg"><img src="images/Jeep_6.jpg" alt="Jeep 6"></a>
+
+                <a href="images/Jeep_7.jpg"><img src="images/Jeep_7.jpg" alt="Jeep 7"></a>
+
+                <a href="images/Jeep_8.jpg"><img src="images/Jeep_8.jpg" alt="Jeep 8"></a>
+        
+                <a href="images/Jeep_9.jpg"><img src="images/Jeep_9.jpg" alt="Jeep 9"></a>
+        
+            </div>
+            </div>    
+        <!-- End photo gallery -->
+
+        <!-- Start Video -->
+            <div class="video>"
+            <div id="video">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Xmu3R7csCck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </div>
+        
+            <!-- END VIDEO -->
+
+        <!-- CONTACT US -->
+            <div class="morepadding">
+            <div id="contact">
+                <div class="container">
+                    <form action="action_page.php">
+
+                        <label for="fname">First Name</label>
+                        <input type="text"id="fname" name="firstname" placeholder="Your First Name.." >
+
+                        <label for="fname">Last Name</label>
+                        <input type="text"id="lname" name="lastname" placeholder="Your Last Name.." >
+
+                        <label for="JeepOpinion">Do You Like Jeep?</label>
+                        <select id="Jeep" name="Jeep">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                            <option value="No Opinion">No Opinion</option>
+                        </select>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    <footer>
+        <div class="footer">
+        &copy; 2020 Jeeps Unlimited | Carlisle, PA
+        </div>
+    
+    </footer>
+    </html>
