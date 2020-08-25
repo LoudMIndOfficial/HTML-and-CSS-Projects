@@ -1,0 +1,96 @@
+body {
+  background-color: rgb(211, 211, 211);
+}
+
+h1 {
+  color: blueviolet;
+  margin-left: 100px;
+  text-shadow: 1px 0.5px 4px lightblue;
+}
+
+.container {
+  width: 450px;
+  height: 450px;
+  background-color: rgb(83, 242, 146);
+  border: 4px solid black;
+  border-radius: 5%;
+}
+/* Select all Squares in the Array */
+.container .squares:nth-child(-n + 4) {
+  background-image: url("../Images/Icons/smileyface2.png");
+  color: rgb(50, 136, 6);
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 20%;
+  transition: .25s ease-in-out ;
+
+}
+/* Select all sqaures paragraphs in the array */
+
+.squares:nth-child(-n + 4) p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  text-shadow: 2px 1px 4px black;
+}
+
+/* individually select a square in the array */
+.squares:nth-child(1) {
+  background-color: rgb(230, 160, 9);
+}
+.squares:nth-child(2) {
+  background-color: rgb(200, 255, 0);
+}
+.squares:nth-child(3) {
+  background-color: rgb(16, 60, 206);
+}
+.squares:nth-child(4) {
+  background-color: rgb(255, 0, 174);
+}
+
+/* Hoover Effects and transform effects */
+.container .squares:nth-child(-n + 4):hover {
+  background-image: url(../Images/Icons/smileyface1.png);
+  transform: scale(.5);
+  animation-name: race;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(2.5,.2,.3,2);
+}
+
+.squares:nth-child(1):hover {
+  background-color: red;
+}
+.squares:nth-child(2):hover {
+  background-color: white;
+}
+.squares:nth-child(3):hover {
+  background-color: rgb(45, 181, 111);
+}
+.squares:nth-child(4):hover {
+  background-color: gold;
+}
+.button:hover {
+  background-color: darkorchid;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+/* Animation Effect */
+@keyframes race {
+  0%, 100% {
+    transform: translate(0px);
+          background-image: url(../Images/Icons/smileyface1.png);
+  }
+    50% {
+      transform: translateY(330px);
+    }
+
+}
+ 
